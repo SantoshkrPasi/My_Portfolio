@@ -1,13 +1,13 @@
 import './App.css'
-import Project from './component/Projects/Project'
+import Contact from './component/Contact/Contact'
 
 function App() {
  
   return (
     <>
-       <div>
-       <Project />
-       </div>
+       {/* <div> */}
+       <Contact />
+       {/* </div> */}
     </>
   )
 }
