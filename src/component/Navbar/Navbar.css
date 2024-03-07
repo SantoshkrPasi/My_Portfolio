@@ -1,0 +1,77 @@
+.container {
+    background-color: rgba(72, 63, 47, 0.5);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.containerElement {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    width: 80%;
+}
+
+.items{
+    margin: 5px 20px;
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.items:hover
+{
+    background-color: rgba(9, 8, 8, 0.5);
+    border-radius: 5px;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+    color: #000;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 560px) {
+    .container
+    {
+      height: 50%;
+      position: relative;
+    }
+    .containerElement {
+        background-color: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .items {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 2px;
+        background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .items:hover {
+        background-color: rgba(255, 255, 255, 0.5); /* Slightly more opaque on hover */
+    }
+}

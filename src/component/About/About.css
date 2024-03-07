@@ -1,0 +1,47 @@
+.about {
+  background-color: aquamarine;
+  padding: 1px;
+}
+
+.about-main
+{
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items:space-between;
+margin-top: 5%;
+margin-bottom: 15px;
+}
+
+.about-content-first {
+  margin: 20px;
+}
+.about-image
+{
+ border-radius: 50%;
+ height: 500px;
+}
+
+.about-content-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 560px) {
+ .about
+ {
+  padding: 20px;
+ }
+ .about-main
+ {
+  display: flex;
+  flex-direction: column;
+ }
+ .about-image
+ {
+  height: 20%;
+ }
+}

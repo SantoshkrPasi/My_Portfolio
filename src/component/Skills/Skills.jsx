@@ -3,6 +3,7 @@ import Circular from "./Circular";
 import Lottie from "lottie-react";
 import Arrow from "./Arrow.json";
 import skills from './Lists'
+import './skills.css'
 
 const Skills = () => {
 

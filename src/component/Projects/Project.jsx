@@ -4,38 +4,52 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Cards from './Cards';
 import projects from './Projectlist';
+import Image from './background/background.jpg'
 
 const Project = () => {
-  const [backgroundColor, setBackgroundColor] = useState("#000"); // Initial background color
-  const settings = {   
-    className: "center", // You can modify this class name if needed
+  const settings = {
+    className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "80px",
     slidesToShow: 2,
-    speed: 500
+    speed: 500,
   };
+
+  const ProjectMain = {
+    backgroundImage: `url(${Image})`,
+    display: 'flex', 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    height: '100vh',
+    fontSize: "20px",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  }
 
   return (
     <>
-      <div style={{backgroundColor:'grey',padding:"50px"}}>        
-        <div style={{ margin: "20px auto", width: "80%" }}>
-          <Slider {...settings}>
-            {projects.map((project, index) => (
-              <Cards
-                key={index}
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                githubLink={project.githubLink}
-                hostedLink={project.hostedLink}
-              />
-            ))}
-          </Slider>
-        </div>
-      </div>
+     <div style={ProjectMain}>
+  <div style={{ height: '50%', width: '80%',backgroundColor: 'rgba(255, 255, 255, 0)'}}>
+    <Slider {...settings} >
+      {projects.map((project, index) => (
+        <div style={{ backgroundColor: 'rgba(255, 255, 255, 1)' }}>
+          <Cards
+            key={index}
+            image={project.image}
+            title={project.title}
+            description={project.description}
+            githubLink={project.githubLink}
+            hostedLink={project.hostedLink}
+          />
+       </div>
+      ))}
+    </Slider>
+  </div>
+</div>
+
     </>
   );
 };
+
 
 export default Project;

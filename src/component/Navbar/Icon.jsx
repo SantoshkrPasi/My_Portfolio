@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Icon = (props) => {
   const container ={
-   margin : '10px',
+   margin : '0px 10px',
   }
   return (
     <div style={container}>

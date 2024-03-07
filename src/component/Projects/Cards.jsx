@@ -1,5 +1,5 @@
 import React from 'react'
-import  Image from '../Home/background-image.jpg'
+import { motion } from "framer-motion";
 
 const Cards = (props) => {
   return (
@@ -11,8 +11,13 @@ const Cards = (props) => {
         <h2 style={styles.title}>{props.title}</h2>
         <p style={styles.description}>{props.description}</p>
         <div style={styles.buttonContainer}>
-          <a href={props.hostedLink} style={styles.button} target="_blank" rel="noopener noreferrer">View Project</a>
+        <motion.button
+      whileTap={{ scale: 0.85 }}
+    >
+     <a href={props.hostedLink} style={styles.button} target="_blank" rel="noopener noreferrer">View Project</a>
           <a href={props.githubLink} style={styles.button} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+    </motion.button>
+          
         </div>
       </div>
     </div>
@@ -21,10 +26,11 @@ const Cards = (props) => {
 
 
 const styles = {
-  card: {
-    backgroundColor: '#fff',
-    height: '400px',
-    width: '300px',
+   card: {
+    backgroundColor:  'rgba(255, 255, 255, 0)',
+    height: '500px',
+    width: '400px',
+    margin : '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -33,7 +39,6 @@ const styles = {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.3s ease-in-out',
     cursor: 'pointer',
-    margin: '20px',
     overflow: 'hidden',
   },
   imageContainer: {
@@ -50,14 +55,14 @@ const styles = {
     textAlign: 'center',
   },
   title: {
-    fontSize: '24px',
+    fontSize: '20px',
     marginBottom: '10px',
-    color: '#333',
+    color: 'white',
   },
   description: {
     fontSize: '16px',
     marginBottom: '20px',
-    color: '#666',
+    color: 'white',
   },
   buttonContainer: {
     display: 'flex',
@@ -65,13 +70,14 @@ const styles = {
   },
   button: {
     padding: '10px 20px',
-    backgroundColor: 'rgba(0, 123, 255, 0.8)',
+    backgroundColor: 'grey',
     color: '#fff',
-    borderRadius: '5px',
+    borderRadius: '30%',
     border: 'none',
     margin: '0 10px',
     cursor: 'pointer',
     transition: 'background-color 0.3s ease-in-out',
+    textDecoration: 'none',
   },
 };
 
