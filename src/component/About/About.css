@@ -31,17 +31,33 @@ margin-bottom: 15px;
 }
 
 @media screen and (max-width: 560px) {
- .about
- {
-  padding: 20px;
- }
- .about-main
- {
-  display: flex;
-  flex-direction: column;
- }
- .about-image
- {
-  height: 20%;
- }
+   .about-main
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    padding-top: 10px;
+  }
+  
+  .about-content-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .about-image
+  {
+   width: 200px;
+   height: 200px;
+  }
+  
+  .about-content-second {
+    padding: 5px;
+  }
+  
+  .row td
+  {
+   font-size: 70px;
+  }
 }

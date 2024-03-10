@@ -31,4 +31,8 @@ const Circular = (props) => {
   )
 }
 
+if (window.matchMedia("(max-width: 560px)").matches) {
+   container.height ='5px';
+  }
+
 export default Circular

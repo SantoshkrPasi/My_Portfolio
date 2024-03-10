@@ -1,0 +1,28 @@
+@media screen and (max-width: 560px) {
+    .ProjectMain {
+        height: 100vh;
+        width: 100vw;
+
+    }
+    .ProjectContent{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.ProjectMain {
+    background-image: url("F:\MY PLACEMENT\PROJECTS\PortFolia\portfolio\src\component\Projects\background\background.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ProjectContent {
+    height: 50%;
+    width: 80%; 
+    background-color: rgba(255, 255, 255, 0);
+}

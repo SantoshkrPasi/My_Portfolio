@@ -81,5 +81,15 @@ const styles = {
   },
 };
 
+if (window.matchMedia("(max-width: 560px)").matches) {
+  styles.card.width = '400px';
+  styles.card.height = '400px';
+  styles.title.fontSize = '16px';
+  styles.description.fontSize = '14px';
+  styles.button.padding = '8px 16px';
+  styles.button.margin = '5px';
+  styles.card.margin = '50px';
+}
+
 
 export default Cards
