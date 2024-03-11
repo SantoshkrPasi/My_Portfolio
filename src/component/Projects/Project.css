@@ -11,15 +11,16 @@
     background-image: url("F:\MY PLACEMENT\PROJECTS\PortFolia\portfolio\src\component\Projects\background\background.jpg");
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    font-size: 20px;
+    font-size: 10px;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .ProjectContent {
     height: 50%;
     width: 80%; 
+    margin-top: 50px;
     background-color: rgba(255, 255, 255, 0);
 }

@@ -5,8 +5,9 @@
 
 
 #root {
-    height: 100vh;
-    /* overflow-y: hidden; */
+    /* height: 100vh; */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 @tailwind base;

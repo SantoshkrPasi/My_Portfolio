@@ -3,6 +3,7 @@ import Circular from "./Circular";
 import Lottie from "lottie-react";
 import Arrow from "./Arrow.json";
 import skills from './Lists'
+import Image from './background.jpg'
 import './skills.css'
 
 const Skills = () => {
@@ -10,6 +11,7 @@ const Skills = () => {
     const content = {
         backgroundColor: 'grey',
         height: '100vh',
+        backgroundImage: `url(${Image})`,
     };
     //  const contentSkillGrid = {};
 

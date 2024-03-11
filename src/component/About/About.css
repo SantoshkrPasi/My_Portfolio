@@ -1,6 +1,9 @@
 .about {
+  background-image: url('./background.jpg');
   background-color: aquamarine;
   padding: 1px;
+  color: aliceblue;
+  height: 100vh; 
 }
 
 .about-main

@@ -9,17 +9,16 @@ import Navbar from './component/Navbar/Navbar'
 
 function App() {
   return (
-    // <div className='bg-red-400 h-screen w-screen'></div>
-         <BrowserRouter> 
-         <Navbar />
-         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="skill" element={<Skills />} />
-          <Route path="project" element={<Project />} />
-          <Route path="contact" element={<Contact />} />
-         </Routes>
-         </BrowserRouter> 
+    <BrowserRouter> 
+    <Navbar />
+        <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="about" element={<About />} />
+         <Route path="skill" element={<Skills />} />
+         <Route path="project" element={<Project />} />
+         <Route path="contact" element={<Contact />} />
+        </Routes>
+        </BrowserRouter> 
   )
 }
 
