@@ -11,28 +11,17 @@ const Skills = () => {
         backgroundColor: 'grey',
         height: '100vh',
     };
-    const contentCircle = {
-        paddingTop : '50px',
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-    };
-    const animation = {
-        height: "150px",
-        width: "150px",
-    };
-     const contentSkillGrid = {};
-
+    //  const contentSkillGrid = {};
 
     return (
         <div style={content}>
-            <div style={contentCircle}>
+            <div className="contentCircle">
                 <Circular name="CONCEPT" count="1" />
-                <Lottie animationData={Arrow} style={animation} />
+                <Lottie animationData={Arrow} className="animation" />
                 <Circular name="DESIGN" count="2" />
-                <Lottie animationData={Arrow} style={animation} />
+                <Lottie animationData={Arrow} className="animation" />
                 <Circular name="CODING" count="3" />
-                <Lottie animationData={Arrow} style={animation} />
+                <Lottie animationData={Arrow} className="animation" />
                 <Circular name="LAUNCH" count="4" />
             </div>
                  <div style={{margin : '50px'}}>

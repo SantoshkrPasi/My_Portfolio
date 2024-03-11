@@ -9,6 +9,7 @@ import Navbar from './component/Navbar/Navbar'
 
 function App() {
   return (
+    // <div className='bg-red-400 h-screen w-screen'></div>
          <BrowserRouter> 
          <Navbar />
          <Routes>

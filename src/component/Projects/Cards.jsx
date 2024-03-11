@@ -11,13 +11,10 @@ const Cards = (props) => {
         <h2 style={styles.title}>{props.title}</h2>
         <p style={styles.description}>{props.description}</p>
         <div style={styles.buttonContainer}>
-        <motion.button
-      whileTap={{ scale: 0.85 }}
-    >
-     <a href={props.hostedLink} style={styles.button} target="_blank" rel="noopener noreferrer">View Project</a>
+        <motion.button whileTap={{ scale: 0.85 }}>
+          <a href={props.hostedLink} style={styles.button} target="_blank" rel="noopener noreferrer">View Project</a>
           <a href={props.githubLink} style={styles.button} target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-    </motion.button>
-          
+        </motion.button>          
         </div>
       </div>
     </div>
@@ -40,6 +37,7 @@ const styles = {
     transition: 'transform 0.3s ease-in-out',
     cursor: 'pointer',
     overflow: 'hidden',
+    marginBottom : '200px',
   },
   imageContainer: {
     width: '100%',
@@ -82,12 +80,12 @@ const styles = {
 };
 
 if (window.matchMedia("(max-width: 560px)").matches) {
-  styles.card.width = '400px';
-  styles.card.height = '400px';
-  styles.title.fontSize = '16px';
-  styles.description.fontSize = '14px';
-  styles.button.padding = '8px 16px';
-  styles.button.margin = '5px';
+  styles.card.width = '300px';
+  styles.card.height = '500px';
+  styles.title.fontSize = '10px';
+  styles.description.fontSize = '10px';
+  styles.button.padding = '2px 8px';
+  styles.button.margin = '10px';
   styles.card.margin = '50px';
 }
 

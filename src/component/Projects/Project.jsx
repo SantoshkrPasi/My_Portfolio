@@ -12,7 +12,7 @@ const Project = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     speed: 500,
   };
 

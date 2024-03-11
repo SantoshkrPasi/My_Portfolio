@@ -8,23 +8,22 @@ const Navbar = () => {
   const [tab, setTab] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
       if (window.innerWidth <= 560) {
         setIsWidthDecreased(true);
       } else {
         setIsWidthDecreased(false);
       }
-    };
-    handleResize();
   },[window.innerWidth]);
+
 
   const toggle = () => {
     setTab(!tab);
   }
 
+  console.log('print',tab)
   return (
     <nav className='container' >
-      {!isWidthDecreased ? (
+      {!isWidthDecreased && (
         <ul className='containerElement'>
           <Link to='/' style={{ textDecoration: 'none' }}>
             <li className='items'>Home</li>
@@ -42,17 +41,19 @@ const Navbar = () => {
             <li className='items'>Contact</li>
           </Link>
         </ul>
-      ) : (
-          !tab ?(
+      ) }
+      { isWidthDecreased &&   !tab  &&
       <div className='second_nav'>
         <div className='box'  onClick={toggle}>
           <div className='line'></div>
           <div className='line'></div>
           <div className='line'></div>
         </div>
-      </div>
-      ) :(
-      <ul className='containerElement'>
+      </div>}
+
+
+     { isWidthDecreased && tab &&
+     ( <ul className='containerElement'>
         <Link to='/' style={{ textDecoration: 'none' }}>
           <li className='items' onClick={toggle}>Home</li>
         </Link>
@@ -68,9 +69,8 @@ const Navbar = () => {
         <Link to='/contact' style={{ textDecoration: 'none' }}>
           <li className='items' onClick={toggle}>Contact</li>
         </Link>
-      </ul>
-      )       
-      )}
+      </ul>)
+}
     </nav>
   )
 }
