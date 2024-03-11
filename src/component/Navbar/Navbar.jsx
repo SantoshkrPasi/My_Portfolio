@@ -15,9 +15,8 @@ const Navbar = () => {
       }
   },[window.innerWidth]);
 
-
   const toggle = () => {
-    setTab(!tab);
+    setTab( prev =>!prev);
   }
 
   console.log('print',tab)
