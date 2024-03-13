@@ -50,7 +50,7 @@ const About = () => {
               <tr>
                 <td style={myStyle.row}>
                   <strong>KANYAPUR POLYTECHNIC </strong>
-                  <p>(Diploma in Mechanical Engineering)</p>
+                  <p>(Diploma)</p>
                 </td>
                 <td style={myStyle.row}>
                   <strong>2018 - 2021</strong>

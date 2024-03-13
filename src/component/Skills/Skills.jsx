@@ -9,9 +9,12 @@ import './skills.css'
 const Skills = () => {
 
     const content = {
-        backgroundColor: 'grey',
         height: '100vh',
+        width: '100vw',
         backgroundImage: `url(${Image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+
     };
     //  const contentSkillGrid = {};
 
