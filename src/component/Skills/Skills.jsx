@@ -8,18 +8,11 @@ import './skills.css'
 
 const Skills = () => {
 
-    const content = {
-        height: '100vh',
-        width: '100vw',
-        backgroundImage: `url(${Image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-
-    };
+    
     //  const contentSkillGrid = {};
 
     return (
-        <div style={content}>
+        <div className="Skill-content">
             <div className="contentCircle">
                 <Circular name="CONCEPT" count="1" />
                 <Lottie animationData={Arrow} className="animation" />
@@ -29,7 +22,6 @@ const Skills = () => {
                 <Lottie animationData={Arrow} className="animation" />
                 <Circular name="LAUNCH" count="4" />
             </div>
-                 <div style={{margin : '50px'}}>
                     <div className="skills-grid">
                         {skills.map((item, index) => (
                             <div key={index} className="skill-item">
@@ -41,7 +33,6 @@ const Skills = () => {
                             </div>
                         ))}
                     </div>
-                </div>
         </div>
     );
 };

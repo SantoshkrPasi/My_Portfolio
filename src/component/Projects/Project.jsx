@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Cards from './Cards';
 import projects from './Projectlist';
 import Image  from './background/background.jpg';
-import './Project.css'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;

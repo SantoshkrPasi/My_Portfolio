@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Cards = (props) => {
   return (
-    <div className='h-96 w-4/5 rounded-xl bg-green-600 bg-opacity-20' >
+    <div className='w-4/5 rounded-xl bg-green-600 bg-opacity-20 p-5' >
       <div className='p-2 h-3/4 flex-col justify-center items-center'>
         <img src={props.image} alt="Project" className='h-60 flex-col justify-center items-center w-80 rounded-xl' />
       </div>
@@ -11,7 +11,7 @@ const Cards = (props) => {
         <h3 style={styles.title}>{props.title}</h3>
         <p style={styles.description}>{props.description}</p>
       </div>
-        <div className='mb-2 flex gap-5 justify-center items-center'>
+        <div className='m-5 flex gap-5 justify-center items-center'>
         <motion.button whileTap={{ scale: 0.85 }}>
           <a href={props.hostedLink} style={styles.button} target="_blank" rel="noopener noreferrer" className='h-5/4 w-6/4'>View Project</a>
         </motion.button>
@@ -25,7 +25,6 @@ const Cards = (props) => {
 
 
 const styles = {
-
 
   title: {
     fontFamily: 'cursive',
@@ -43,12 +42,12 @@ const styles = {
     cursor: 'pointer',
     display: 'inline-block',
     fontFamily: 'CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif',
-    padding: '10px 20px',
+    padding: '8px 10px',
     textAlign: 'center',
     textDecoration: 'none',
     transition: 'all 250ms',
     border: '0',
-    fontSize: '80%',
+    fontSize: '70%',
     userSelect: 'none',
     WebkitUserSelect: 'none',
     touchAction: 'manipulation',

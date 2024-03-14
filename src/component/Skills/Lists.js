@@ -41,12 +41,7 @@ const skillsWithImages = [
       image: PYTHON,
       rating: 80,
     },
-    {
-        skill: 'Data Structure and Algorithm',
-        image: DSA,
-        rating: 80,
-      },
-
+    
     { 
       skill: 'React Js',
       image: REACT,
@@ -67,6 +62,11 @@ const skillsWithImages = [
       image: SQL,
       rating: 80,
     },
+    {
+        skill: 'Data Structure and Algorithm',
+        image: DSA,
+        rating: 80,
+      },
   ];
   
   export default skillsWithImages;
