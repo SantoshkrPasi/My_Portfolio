@@ -1,85 +1,21 @@
 import React from 'react'
-import profileImage from './Profile.png';
+import Typewriter from './Typewriter'
 import './About.css'
 
 const About = () => {
-  const myStyle = {
-    row: {
-      textAlign: 'left',
-      padding: '2px',
-      fontSize: '15px',
-      fontFamily: 'Helvetica',
-      fontStyle: 'italic',
-      margin: '10px',
-    },
-  };
+  const text = ""
 
   return (
-    <div className='about'>
-      <div className="about-main">
-        <div className='about-content-first' >
-          <img src={profileImage} alt="profile" className='about-image' />
+    <div className='bg-white dark:bg-slate-800 p-10 h-full min-h-screen flex justify-center items-center'>
+      <div className="bg-white dark:bg-slate-800 to-black-500 h-3/4 w-4/5 flex-col gap-10">
+          <h1 className='text-center m-10 tracking-widest text-black-500 md:text-xl dark:text-gray-400'>About ME</h1>  
+        <div className='tracking-tighter text-gray-500 md:text-lg dark:text-gray-400 italic h-3/4  flex-col justify-center items-center p-10 m-10'>
+          <p className='text-center' ><Typewriter text="Hi , I'm a Full Stack Developer with strong foundation in C/C++ ,Python ,HTMl ,CSS ,Javascript ,Bootstrap ,Tailwind CSS ,SQl ,MongoDB ,ReactJs ,NodeJs ,ExpressJs.
+         I'm passionate about using these skills to develop innovative web application that are user-friendly.I'm always eager to learn more about web development.I enjoy the challenge of coding and solving problem showcasing my problem solving skills.  
+         Currently, I'm looking for opportunities to join a team that values innovation and shares my enthusiasm for technology." 
+         delay={50}
+         /></p>
         </div>
-        <div className='about-content-second'>
-          <h1>
-            A Coder A Developer
-          </h1>
-          <hr style={{ border: "1px solid black", marginTop: "0.5rem", marginBottom: "0.5rem" }} />
-          <p style={{ fontSize: "10px", fontFamily: 'Helvetica', fontStyle: 'italic', margin: "10px" }}>
-            "Hello, I am Santosh Kumar Pasi, an undergraduate student currently pursuing a Bachelor of Technology in Information Technology from Kalyani Government Engineering College. I am a slow but unforgettable learner, endowed with a high density of patience."
-          </p>
-          <h3 style={{ margin: "10px", fontSize: "20px", color: 'black', fontStyle: 'italic' }}>
-            Education
-          </h3>
-          <table>
-            <thead>
-              <tr>
-                <td style={myStyle.row}>
-                  <strong>Kalyani Government Engineering College </strong>
-                  <p>(Bachelor of Technology in Information Technology)</p>
-                </td>
-                <td style={myStyle.row}>
-                  <strong>2021 - 2024</strong>
-                </td>
-                <td style={myStyle.row}>
-                  <strong>8.7</strong>
-                </td>
-              </tr>
-            </thead>
-            <thead>
-              <tr>
-                <td style={myStyle.row}>
-                  <strong>KANYAPUR POLYTECHNIC </strong>
-                  <p>(Diploma)</p>
-                </td>
-                <td style={myStyle.row}>
-                  <strong>2018 - 2021</strong>
-                </td>
-                <td style={myStyle.row}>
-                  <strong>8.0</strong>
-                </td>
-              </tr>
-            </thead>
-            <thead>
-              <tr>
-                <td style={myStyle.row}>
-                  <strong>DAV PUBLIC SCHOOL</strong>
-                  <p>..</p>
-                </td>
-                <td style={myStyle.row}>
-                  <strong style={{ display: "flex" }}>2011 - 2018</strong>
-                </td>
-                <td style={myStyle.row}>
-                  <strong>7.8</strong>
-                </td>
-              </tr>
-            </thead>
-          </table>
-          <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center w-1/4 flex justify-center m-5">
-            <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
-            <span>Download</span>
-          </button>       
-         </div>
       </div>
     </div>
   )
