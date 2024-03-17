@@ -63,13 +63,12 @@ const Project = () => {
     <>
       <div className= 'h-screen w-screen flex justify-center items-center bg-cover bg-center' style={{backgroundImage: `url(${Image})`}}>
         <div className='w-5/6 h-4/5'>
-            <Slider {...settings} className='bg-red-400 w-full h-full flex items-center justify-center bg-indigo-600 bg-opacity-20' variableWidth={false} centerMode={true}>
+            <Slider {...settings}variableWidth={false} centerMode={true} className='z-0'>
             {projects.map((project, index) => (
                       <Cards
                         key={index}
                         image={project.image}
                         title={project.title}
-                        description={project.description}
                         githubLink={project.githubLink}
                         hostedLink={project.hostedLink}
                       />

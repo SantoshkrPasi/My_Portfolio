@@ -9,7 +9,6 @@ const Cards = (props) => {
       </div>
       <div className='flex-col justify-start items-start'>
         <h3 style={styles.title}>{props.title}</h3>
-        <p style={styles.description}>{props.description}</p>
       </div>
         <div className='m-5 flex gap-5 justify-center items-center'>
         <motion.button whileTap={{ scale: 0.85 }}>

@@ -9,16 +9,15 @@ const Navbar = () => {
 
   useEffect(() => {
     if (window.innerWidth <= 560) {
-      setIsWidthDecreased(true);
+        setIsWidthDecreased(true);
     } else {
-      setIsWidthDecreased(false);
+        setIsWidthDecreased(false);
     }
-  });
+});
 
   const toggle = () => {
     setTab(prev => !prev);
   }
-  console.log('print', tab)
   return (
     <div className='Nav-main'>
       <nav className='container' >
