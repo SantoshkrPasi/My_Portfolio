@@ -166,7 +166,6 @@
      justify-content: center;
      align-items: center;
      padding: 60px 0px;
-     position: fixed;
     }
     .contact {
       background-color: rgb(81, 62, 62);
@@ -174,10 +173,10 @@
       height: 80%;
       display: flex;
       flex-direction: column;
-   
+      
     }
-  .content
-  {
+    .content
+    {
     width: 40%;
     padding: 10px;
     color: #fff;

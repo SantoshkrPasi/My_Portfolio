@@ -2,6 +2,9 @@ import { useState } from 'react';
 import './contact.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Email from '../Contact/email.png';
+import Location from '../Contact/location.png';
+import User from '../Contact/user.png';
 
 
 const Contact = () => {
@@ -49,7 +52,7 @@ const Contact = () => {
                         <div className="bio-header">
                             <div className='bio'>
                                 <div className='text'>
-                                    <img src='src\component\Contact\user.png' alt="user" className='image' />
+                                    <img src= {User} alt="user" className='image' />
                                     <div>
                                         <h1>Name</h1>
                                         <p>Santosh Kumar Pasi</p>
@@ -58,7 +61,7 @@ const Contact = () => {
                             </div>
                             <div className="bio">
                                 <div className='text'>
-                                    <img src='src\component\Contact\location.png' alt="location" className='image' />
+                                    <img src={Location} alt="location" className='image' />
                                     <div>
                                         <h1>Address</h1>
                                         <p>Kolkate,India</p>
@@ -67,7 +70,8 @@ const Contact = () => {
                             </div>
                             <div className="bio">
                                 <div className='text'>
-                                    <img src='src\component\Contact\email.png' alt="email" className='image' />                                  <div>
+                                <img src={Email} alt="email" className='image' />
+                                    <div>
                                         <h1>Email</h1>
                                         <p>santoshkumarpasi464@gmail.com</p>
                                     </div>
