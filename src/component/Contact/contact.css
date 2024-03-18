@@ -1,90 +1,89 @@
   /*------------------- contact--------------------- */
-  .main-content
-  {
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-image: url('./background.jpg');
-   background-size: cover; 
-   background-position: center;
+  .main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
   }
+
   .contact {
     opacity: 5.0;
     width: 90%;
     height: 80%;
     display: flex;
- 
+    justify-content: center;
   }
-/* ---------------------------------------------- */
-.content
-{
-  width: 40%;
-  padding: 10px;
-  color: #fff;
-}
 
-.content-child
-{
-  height: 100%;
-  width: 90%;
-}
+  /* ---------------------------------------------- */
+  .content {
+    width: 40%;
+    padding: 10px;
+    color: #fff;
+  }
 
-.header
-{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-}
-.bio{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  width: 60%;
-  padding: 10px;
-  margin: 10px;
-  font-size: 10px;
-}
-.text
-{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  .content-child {
+    height: 100%;
+    width: 90%;
+    opacity: 0.6;
+  }
 
-.connection
-{
-  font-weight: 200;
-  width: 60%;
-  padding: 10px;
-  margin: 10px;
-}
-.links
-{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 5px;
-  width: 60%;
-  padding: 10px;
-  margin: 10px;
-}
+  .header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .bio {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .connection {
+    font-weight: 200;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+  }
 
 
 
   /* ---------------------------------------------- */
-  .form
-  {
+  .form {
     width: 50%;
     height: 100%;
     padding: 20px;
-
+    color: #fff;
+    opacity: 0.6;
   }
-  .form-content
-  {
+
+  .form-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -92,115 +91,117 @@
     color: #fff;
     font-family: Arial, sans-serif;
   }
-  .user
-  {
+
+  .user {
     display: flex;
     gap: 5px;
     padding: 20px;
   }
-  
-  .user input
-  {
+
+  .user input {
     height: 40px;
     width: 100%;
     border-radius: 5px;
     padding: 10px;
     background-color: #fff;
     color: black;
+    opacity: 0.8;
   }
 
-  .subject-message
-  {
+  .subject-message {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 10px;
     padding: 20px;
   }
 
-  .subject
-  {
+  .subject {
     height: 40px;
     width: 100%;
     border-radius: 5px;
     padding: 10px;
     background-color: #fff;
     color: black;
+    opacity: 0.8;
   }
-  .message
-  {
+
+  .message {
     height: 120px;
     width: 100%;
     border-radius: 5px;
     padding: 10px;
     background-color: #fff;
     color: black;
+    opacity: 0.8;
   }
 
-  .button
-  {
+  .button {
     margin: 10px;
     padding: 10px;
     border-radius: 8px;
     background-color: red;
     color: #ddd;
     border: none;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+  }
+  .button:hover{
+    background-color: rgb(101, 1, 242);
   }
 
-  .image
-  {
+  .image {
     height: 25px;
     width: 25px;
     margin: 5px;
     background-color: #ddd;
+    opacity: 0.2;
   }
 
   @media screen and (max-width: 560px) {
-    .main-content
-    {
-     background-color: rgb(44, 41, 41);
-     width: 100%;
-     height: auto;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 60px 0px;
+    .main-content {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0px;
     }
+
     .contact {
-      background-color: rgb(81, 62, 62);
       width: 90%;
       height: 80%;
       display: flex;
       flex-direction: column;
-      
+
     }
-    .content
-    {
-    width: 40%;
-    padding: 10px;
-    color: #fff;
-    font-size: 12px;
-  }
-  .header
-{
-  width: 600px;
-}
-.bio
-{
-  width: 600px;
-  font-size: 15px;
-}
-    .form
-    {
+
+    .content {
+      width: 40%;
+      padding: 10px;
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .header {
+      width: 300%;
+    }
+
+
+    .bio {
+      width: 300%;
+      font-size: 15px;
+    }
+
+    .form {
       width: 100%;
       height: 100%;
       padding: 20px;
-      background-color: burlywood;
-  
     }
-    .form-content
-    {
+
+    .form-content {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -208,18 +209,17 @@
       color: #fff;
       font-family: Arial, sans-serif;
     }
-    .user
-    {
+
+    .user {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items:center;
+      align-items: center;
       gap: 10px;
       padding: 20px;
     }
-    
-    .user input
-    {
+
+    .user input {
       height: 50px;
       width: 100%;
       margin: 10px;
@@ -228,19 +228,17 @@
       background-color: #fff;
       color: black;
     }
-  
-    .subject-message
-    {
+
+    .subject-message {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items:center;
+      align-items: center;
       gap: 10px;
       padding: 20px;
     }
-  
-    .subject
-    {
+
+    .subject {
       height: 50px;
       width: 100%;
       border-radius: 5px;
@@ -248,9 +246,8 @@
       background-color: #fff;
       color: black;
     }
-  
-    .button
-    {
+
+    .button {
       margin: 5px;
       padding: 8px;
       border-radius: 8px;
@@ -258,8 +255,8 @@
       color: #ddd;
       border: none;
     }
-    .image
-    {
+
+    .image {
       height: 50px;
       width: 50ypx;
       margin: 5px;
