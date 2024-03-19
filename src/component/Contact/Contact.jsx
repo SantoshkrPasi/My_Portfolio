@@ -83,7 +83,7 @@ const Contact = () => {
                             <div className='links'>
                                 <a href="https://www.linkedin.com/in/santosh-kumar-pasi-54a408226/" target="_blank">LinkedIn</a>
                                 <a href="https://github.com/SantoshkrPasi" target='_blank'>Github</a>
-                                <a href="https://web.telegram.org/k/#1116931871" target='_blank'>Telegraam</a>
+                                <a href="https://web.telegram.org/k/#1116931871" target='_blank'>Telegram</a>
                             </div>
                         </div>
                     </div>
