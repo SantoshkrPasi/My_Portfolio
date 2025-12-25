@@ -3,6 +3,8 @@ import Github from './images/github.png'
 import Tic from './images/tic.png'
 import Weather from './images/weather.png'
 import Meme from './images/meme.png'
+import Employee from './images/employee.png'
+import Cab from './images/cab.png'
 
 const projects = [
   {
@@ -39,6 +41,20 @@ const projects = [
     title: 'Meme',
     githubLink: 'https://github.com/SantoshkrPasi/MemeGenerator',
     hostedLink: 'https://meme-generator-psi-ten.vercel.app/',
+  },
+  {
+    id: 6,
+    image: Employee,
+    title: 'Employee Management System',
+    githubLink: 'https://github.com/SantoshkrPasi/Employee-Management',
+    hostedLink: 'https://github.com/SantoshkrPasi/Employee-Management',
+  },
+  {
+    id: 7,
+    image: Cab,
+    title: 'Cab Service',
+    githubLink: 'https://github.com/SantoshkrPasi/Cab-Service',
+    hostedLink: 'https://github.com/SantoshkrPasi/Cab-Service',
   },
 ];
 
