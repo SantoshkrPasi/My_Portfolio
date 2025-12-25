@@ -80,6 +80,7 @@ const skillsWithImages = [
         image: SPRING,
         rating: 80,
       },
+      // Add
   ];
   
   export default skillsWithImages;
