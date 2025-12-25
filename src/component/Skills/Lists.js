@@ -9,6 +9,9 @@ import NODE from './Image/nodejs.png';
 import MONGODB from './Image/mongodb.png';
 import SQL from './Image/Sql.png';
 import DSA from './Image/dsa.png';
+import JAVA from './Image/java.png'
+import SPRING from './Image/spring.png'
+
 const skillsWithImages = [
     {
       skill: 'HTML',
@@ -65,6 +68,16 @@ const skillsWithImages = [
     {
         skill: 'Data Structure and Algorithm',
         image: DSA,
+        rating: 80,
+      },
+      {
+        skill: 'Java',
+        image: JAVA,
+        rating: 80,
+      },
+      {
+        skill: 'SpringBoot',
+        image: SPRING,
         rating: 80,
       },
   ];
